@@ -3,7 +3,7 @@ Compiler for sweet.js macro
 
 ## Summary
 The sweetjs-compiler is a simple wrapper to the exist `compile` method in the [sweet.js](http://sweetjs.org/) module.
-It is usefull when you want compile your macro but this is not necessarily in a file.
+It is usefull when you want compile your macro but it is not necessarily inside a file.
 
 ## Use
 Sweetjs-compiler is a npm module therefore is enought to make:
