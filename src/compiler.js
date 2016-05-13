@@ -30,29 +30,24 @@ var node_module_loader = function (path) {
 /**
  * @description
  * Default constructor.
- * @param options {
- *   {
- *      ambient: String, 
- *      loader: Function,
- *      noBabel: Boolean,
- *      resolver: Function,
- *  }
- * }
- * Compiler options. Object to set the follow params:
- * *ambient: 
- *   description: Directory where to be load the macros
- *   default: The value of `process.cwd()`
- * *noBabel:
- *   description: Set if using babel for the back-end or not
- *   default: `false`
- * *resolver:
- *   description: 
- *   The function to get the path of the macros included in the source
- *   default: `node_module_resolver`
- * *loader:
- *   description: 
- *   The function to read the content of the macros included in the source
- *   default: `node_module_loader`
+ * @param options {Object}
+ * Compiler options. Object with the follow params:
+ * * `ambient`: 
+ *    description:
+ *    Directory where start the search of the require macro. 
+ *    Any import in the souce code is relative at the path set here.
+ *    default: The value of `process.cwd()`
+ * * `noBabel`:
+ *    description: Set if using babel for the back-end or not.
+ *    default: `false`
+ * * `resolver`:
+ *    description: 
+ *    The function to get the path of the macro included in the source.
+ *    default: `node_module_resolver`
+ * * `loader`:
+ *    description: 
+ *    The function to read the content of the macro included in the source.
+ *    default: `node_module_loader`
  * @return {Compiler}
  * This.
  */
@@ -69,8 +64,10 @@ var Compiler = function (options) {
  * Compile the source with the require macros loaded from the ambient select.
  * @param code {string}
  * Source code
- * @return {string}
- * The code expended.
+ * @return {Object}
+ * The object store:
+ * * `code` - The expended code
+ * * `sourceMap` - The source map
  * @throws {Error}
  */
 Compiler.prototype.compile = function (code) {
