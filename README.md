@@ -20,7 +20,7 @@ const SweetCompiler = require('sweetjs-compiler')
 The constructur require an object with the follow params:
 
 ```javascript
-new SweetCompiler({
+SweetCompiler({
   ambient: { type: String, default: process.cwd() },
   noBabel: { type: Boolean, default: false },
   resolver: { type: Function, default: node_module_resolver },
