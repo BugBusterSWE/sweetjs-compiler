@@ -31,7 +31,7 @@ SweetCompiler({
 #### ambient
 Directory where start the search of the require macro. Any import in the souce code is relative at the path set here.
 #### noBabel
-Set if using Babel for the back-end or not
+Set if using Babel for the back-end or not.
 #### resolver
 The function to get the path of the macro included in the source.
 #### loader
