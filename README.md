@@ -20,7 +20,7 @@ const SweetCompiler = require('sweetjs-compiler')
 The constructur require an object with the follow params:
 
 ```javascript
-var compiler = new SweetCompiler({
+SweetCompiler({
   ambient: { type: String, default: process.cwd() },
   noBabel: { type: Boolean, default: false },
   resolver: { type: Function, default: node_module_resolver },
@@ -31,7 +31,7 @@ var compiler = new SweetCompiler({
 #### ambient
 Directory where start the search of the require macro. Any import in the souce code is relative at the path set here.
 #### noBabel
-Set if using Babel for the back-end or not
+Set if using Babel for the back-end or not.
 #### resolver
 The function to get the path of the macro included in the source.
 #### loader
