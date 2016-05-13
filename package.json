@@ -1,5 +1,5 @@
 {
-  "name": "sweet.js-compiler",
+  "name": "sweetjs-compiler",
   "version": "1.0.0",
   "main": "src/compiler.js",
   "description": "Compiler for sweet.js macro",
