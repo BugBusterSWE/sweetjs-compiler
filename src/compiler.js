@@ -6,7 +6,7 @@
  * | Andrea Mantovani | Create class | 2016-05-13 |
  *
  * @author Andrea Mantovani
- * @license BSD-2
+ * @license BSD-2-Clause
  */
 
 var fs = require("fs");
