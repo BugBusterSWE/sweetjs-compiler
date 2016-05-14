@@ -42,7 +42,7 @@ The only method of sweetjs-compiler is `compile`. It take in input the source an
 * `code` - The expended code
 * `sourceMap` - The source map
 
-If some errors is occurred, a exception is throw.
+If some errors is occurred, an exception is throw.
 
 Example:
 ```javascript
@@ -69,4 +69,4 @@ try {
 ```
 
 ## Note
-This project is make to use the method compile in a javascript file. Please, if this is a unneccessary solution, open a issue so I will delete this garbage.
+This project is make to use the method compile in a javascript program. Please, if this is a unneccessary solution, open a issue so I will delete this garbage.
