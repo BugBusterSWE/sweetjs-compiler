@@ -8,6 +8,10 @@
     "sweet.js",
     "macro"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BugBusterSWE/sweetjs-compiler"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
