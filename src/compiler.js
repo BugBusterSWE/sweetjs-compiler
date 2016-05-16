@@ -16,8 +16,7 @@ var resolve = require("resolve");
 
 
 var node_module_resolver = function (path, cwd) {
-    // Is not need using the prefix './' in the path of the macro
-    return resolve.sync("./"+path, { basedir: cwd });
+    return resolve.sync(path, { basedir: cwd });
 };
 
 var node_module_loader = function (path) {
